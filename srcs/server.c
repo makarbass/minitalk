@@ -31,7 +31,7 @@ void	sig_handler(int sig_num, siginfo_t *siginfo, void *context)
 		if (!symbol)
 			ft_putchar_fd('\n', 1);
 		else
-			write(1, &symbol, 1);
+			ft_putchar_fd(symbol, 1);
 		symbol = 0;
 	}
 }
